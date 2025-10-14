@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WooACP Documentation - Complete Guide</title>
+    <meta name="description" content="Complete documentation for WooACP - Learn how to integrate AI-powered commerce into your WooCommerce store.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">WooACP</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="docs.html" class="active">Docs</a></li>
+            </ul>
+
+            <!-- Desktop CTA -->
+            <div class="nav-actions">
+                <a href="https://wordpress.org/plugins/wooacp/" class="btn-secondary">Download Free Version</a>
+                <a href="index.html#pricing" class="btn-primary">Get Pro</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-content">
+                <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html#how-it-works" class="mobile-nav-link">How It Works</a></li>
+                    <li><a href="index.html#features" class="mobile-nav-link">Features</a></li>
+                    <li><a href="index.html#pricing" class="mobile-nav-link">Pricing</a></li>
+                    <li><a href="docs.html" class="mobile-nav-link active">Docs</a></li>
+                </ul>
+                <div class="mobile-nav-cta">
+                    <a href="https://wordpress.org/plugins/wooacp/" class="btn-secondary btn-large mobile-nav-link">Download Free Version</a>
+                    <a href="index.html#pricing" class="btn-primary btn-large mobile-nav-link">Get Pro</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Documentation Container -->
+    <div class="docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <h3 class="docs-nav-title">Documentation</h3>
+                <ul class="docs-nav-list">
+                    <li><a href="#getting-started" class="docs-nav-link">Getting Started</a></li>
+                    <li><a href="#installation" class="docs-nav-link">Installation</a></li>
+                    <li><a href="#configuration" class="docs-nav-link">Configuration</a></li>
+                    <li><a href="#api-overview" class="docs-nav-link">API Overview</a></li>
+                    <li><a href="#authentication" class="docs-nav-link">Authentication</a></li>
+                    <li><a href="#endpoints" class="docs-nav-link">API Endpoints</a></li>
+                    <li><a href="#webhooks" class="docs-nav-link">Webhooks</a></li>
+                    <li><a href="#security" class="docs-nav-link">Security</a></li>
+                    <li><a href="#examples" class="docs-nav-link">Code Examples</a></li>
+                    <li><a href="#troubleshooting" class="docs-nav-link">Troubleshooting</a></li>
+                    <li><a href="#faq" class="docs-nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Documentation Content -->
+        <main class="docs-content">
+            <!-- Introduction -->
+            <section id="introduction" class="docs-section">
+                <h1>WooACP Documentation</h1>
+                <p class="lead">Welcome to the complete guide for WooACP (WooCommerce Agentic Commerce Protocol) - the definitive API that empowers AI agents to interact with your WooCommerce store.</p>
+            </section>
+
+            <!-- Getting Started -->
+            <section id="getting-started" class="docs-section">
+                <h2>Getting Started</h2>
+                <p>WooACP provides a comprehensive REST API that allows AI agents to browse products, manage checkouts, and complete purchases in your WooCommerce store. This guide will help you get up and running quickly.</p>
+
+                <div class="docs-callout docs-callout-info">
+                    <h4>What You'll Need</h4>
+                    <ul>
+                        <li>WordPress 6.0 or higher</li>
+                        <li>WooCommerce 8.0 or higher</li>
+                        <li>PHP 8.1 or higher</li>
+                        <li>SSL certificate (HTTPS recommended for production)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Installation -->
+            <section id="installation" class="docs-section">
+                <h2>Installation</h2>
+
+                <h3>Option 1: Install from WordPress.org (Free Version)</h3>
+                <ol class="docs-list">
+                    <li>Log in to your WordPress admin panel</li>
+                    <li>Navigate to <strong>Plugins → Add New</strong></li>
+                    <li>Search for "WooACP"</li>
+                    <li>Click <strong>Install Now</strong> and then <strong>Activate</strong></li>
+                </ol>
+
+                <h3>Option 2: Manual Installation</h3>
+                <ol class="docs-list">
+                    <li>Download the plugin ZIP file from <a href="https://wordpress.org/plugins/wooacp/" target="_blank">WordPress.org</a></li>
+                    <li>Navigate to <strong>Plugins → Add New → Upload Plugin</strong></li>
+                    <li>Choose the downloaded ZIP file and click <strong>Install Now</strong></li>
+                    <li>Click <strong>Activate Plugin</strong></li>
+                </ol>
+
+                <h3>Option 3: Pro Version</h3>
+                <ol class="docs-list">
+                    <li>Purchase and download the Pro version from our website</li>
+                    <li>Navigate to <strong>Plugins → Add New → Upload Plugin</strong></li>
+                    <li>Upload the Pro ZIP file and activate</li>
+                    <li>Enter your license key in <strong>WooCommerce → Settings → WooACP</strong></li>
+                </ol>
+            </section>
+
+            <!-- Configuration -->
+            <section id="configuration" class="docs-section">
+                <h2>Configuration</h2>
+
+                <h3>Step 1: Access Settings</h3>
+                <p>Navigate to <strong>WooCommerce → Settings → WooACP</strong> in your WordPress admin panel.</p>
+
+                <h3>Step 2: Generate API Credentials</h3>
+                <p>Click the <strong>"Generate New Credentials"</strong> button to create your API key and signing secret.</p>
+
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span>Generated Credentials</span>
+                    </div>
+                    <pre><code>API Key: wcp_abc123def456ghi789
+Signing Secret: sec_xyz789abc123def456</code></pre>
+                </div>
+
+                <div class="docs-callout docs-callout-warning">
+                    <h4>⚠️ Important Security Note</h4>
+                    <p>Store your signing secret securely. Never commit it to version control or expose it in client-side code. This secret is used to verify webhook signatures and API requests.</p>
+                </div>
+
+                <h3>Step 3: Configure Webhook URL (Pro Only)</h3>
+                <p>If you're using the Pro version, configure your webhook endpoint URL to receive real-time order updates.</p>
+
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span>Example Webhook URL</span>
+                    </div>
+                    <pre><code>https://your-ai-agent.com/webhooks/wooacp</code></pre>
+                </div>
+            </section>
+
+            <!-- API Overview -->
+            <section id="api-overview" class="docs-section">
+                <h2>API Overview</h2>
+                <p>The WooACP API is organized around REST principles with predictable, resource-oriented URLs. It uses standard HTTP response codes and returns JSON-encoded responses.</p>
+
+                <h3>Base URL</h3>
+                <div class="docs-code-block">
+                    <pre><code>https://your-store.com/wp-json/acp/v1/</code></pre>
+                </div>
+
+                <h3>API Capabilities</h3>
+                <div class="docs-feature-grid">
+                    <div class="docs-feature-card">
+                        <h4>🔍 Product Discovery</h4>
+                        <p>Browse, search, and filter your entire product catalog with pagination support.</p>
+                    </div>
+                    <div class="docs-feature-card">
+                        <h4>🛒 Checkout Management</h4>
+                        <p>Create and manage checkout sessions with cart items, shipping, and tax calculations.</p>
+                    </div>
+                    <div class="docs-feature-card">
+                        <h4>💳 Order Completion</h4>
+                        <p>Finalize purchases and create WooCommerce orders with a single API call.</p>
+                    </div>
+                    <div class="docs-feature-card">
+                        <h4>🔔 Real-time Webhooks</h4>
+                        <p>Receive instant notifications for order status changes and events.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Authentication -->
+            <section id="authentication" class="docs-section">
+                <h2>Authentication</h2>
+                <p>WooACP uses API key authentication with HMAC signature verification for secure communication.</p>
+
+                <h3>Authentication Header</h3>
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span>HTTP Headers</span>
+                    </div>
+                    <pre><code>X-WCP-API-Key: wcp_abc123def456ghi789
+X-WCP-Signature: sha256=<computed_hmac_signature>
+Content-Type: application/json</code></pre>
+                </div>
+
+                <h3>Generating HMAC Signature</h3>
+                <p>For write operations (POST, PUT, DELETE), you must include an HMAC signature of the request body.</p>
+
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span>JavaScript Example</span>
+                    </div>
+                    <pre><code>const crypto = require('crypto');
+
+const payload = JSON.stringify(requestBody);
+const signature = crypto
+  .createHmac('sha256', signingSecret)
+  .update(payload)
+  .digest('hex');
+
+const hmacHeader = `sha256=${signature}`;</code></pre>
+                </div>
+
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span>Python Example</span>
+                    </div>
+                    <pre><code>import hmac
+import hashlib
+import json
+
+payload = json.dumps(request_body)
+signature = hmac.new(
+    signing_secret.encode(),
+    payload.encode(),
+    hashlib.sha256
+).hexdigest()
+
+hmac_header = f"sha256={signature}"</code></pre>
+                </div>
+            </section>
+
+            <!-- API Endpoints -->
+            <section id="endpoints" class="docs-section">
+                <h2>API Endpoints</h2>
+
+                <h3>Products API</h3>
+                <div class="docs-endpoint">
+                    <div class="docs-endpoint-header">
+                        <span class="docs-method docs-method-get">GET</span>
+                        <code>/wp-json/acp/v1/products</code>
+                    </div>
+                    <p>Retrieve a paginated list of products from your catalog.</p>
+
+                    <h4>Query Parameters</h4>
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>search</code></td>
+                                <td>string</td>
+                                <td>Search query for product name or description</td>
+                            </tr>
+                            <tr>
+                                <td><code>category</code></td>
+                                <td>string</td>
+                                <td>Filter by category slug</td>
+                            </tr>
+                            <tr>
+                                <td><code>page</code></td>
+                                <td>integer</td>
+                                <td>Page number (default: 1)</td>
+                            </tr>
+                            <tr>
+                                <td><code>per_page</code></td>
+                                <td>integer</td>
+                                <td>Items per page (default: 20, max: 100)</td>
+                            </tr>
+                            <tr>
+                                <td><code>orderby</code></td>
+                                <td>string</td>
+                                <td>Sort by: date, title, price (default: date)</td>
+                            </tr>
+                            <tr>
+                                <td><code>order</code></td>
+                                <td>string</td>
+                                <td>Sort order: asc, desc (default: desc)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Example Request</h4>
+                    <div class="docs-code-block">
+                        <pre><code>GET /wp-json/acp/v1/products?search=shirt&per_page=10
+X-WCP-API-Key: wcp_abc123def456ghi789</code></pre>
+                    </div>
+
+                    <h4>Example Response</h4>
+                    <div class="docs-code-block">
+                        <pre><code>{
+  "products": [
+    {
+      "id": 123,
+      "name": "Classic Cotton T-Shirt",
+      "slug": "classic-cotton-tshirt",
+      "price": "29.99",
+      "regular_price": "39.99",
+      "sale_price": "29.99",
+      "on_sale": true,
+      "stock_status": "instock",
+      "stock_quantity": 50,
+      "description": "Comfortable 100% cotton t-shirt",
+      "short_description": "Classic everyday tee",
+      "images": [
+        {
+          "src": "https://your-store.com/wp-content/uploads/tshirt.jpg",
+          "alt": "Classic T-Shirt"
+        }
+      ],
+      "categories": ["Clothing", "T-Shirts"],
+      "variations": []
+    }
+  ],
+  "pagination": {
+    "total": 150,
+    "pages": 15,
+    "current_page": 1,
+    "per_page": 10
+  }
+}</code></pre>
+                    </div>
+                </div>
+
+                <h3>Checkout Sessions API (Pro Only)</h3>
+                <div class="docs-endpoint">
+                    <div class="docs-endpoint-header">
+                        <span class="docs-method docs-method-post">POST</span>
+                        <code>/wp-json/acp/v1/checkout-sessions</code>
+                    </div>
+                    <p>Create a new checkout session with cart items.</p>
+
+                    <h4>Request Body</h4>
+                    <div class="docs-code-block">
+                        <pre><code>{
+  "items": [
+    {
+      "product_id": 123,
+      "quantity": 2,
+      "variation_id": null
+    }
+  ],
+  "customer": {
+    "email": "customer@example.com",
+    "first_name": "John",
+    "last_name": "Doe"
+  },
+  "idempotency_key": "unique-request-id-123"
+}</code></pre>
+                    </div>
+
+                    <h4>Example Response</h4>
+                    <div class="docs-code-block">
+                        <pre><code>{
+  "session_id": "cs_abc123",
+  "status": "pending",
+  "items": [...],
+  "subtotal": "59.98",
+  "tax": "5.40",
+  "shipping": "0.00",
+  "total": "65.38",
+  "expires_at": "2025-01-15T18:30:00Z"
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="docs-endpoint">
+                    <div class="docs-endpoint-header">
+                        <span class="docs-method docs-method-post">POST</span>
+                        <code>/wp-json/acp/v1/checkout-sessions/{id}/shipping</code>
+                    </div>
+                    <p>Calculate shipping options for a checkout session.</p>
+
+                    <h4>Request Body</h4>
+                    <div class="docs-code-block">
+                        <pre><code>{
+  "shipping_address": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "address_1": "123 Main St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10001",
+    "country": "US"
+  }
+}</code></pre>
+                    </div>
+
+                    <h4>Example Response</h4>
+                    <div class="docs-code-block">
+                        <pre><code>{
+  "shipping_methods": [
+    {
+      "id": "flat_rate",
+      "label": "Flat Rate",
+      "cost": "10.00",
+      "delivery_time": "3-5 business days"
+    },
+    {
+      "id": "express",
+      "label": "Express Shipping",
+      "cost": "25.00",
+      "delivery_time": "1-2 business days"
+    }
+  ]
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="docs-endpoint">
+                    <div class="docs-endpoint-header">
+                        <span class="docs-method docs-method-post">POST</span>
+                        <code>/wp-json/acp/v1/checkout-sessions/{id}/complete</code>
+                    </div>
+                    <p>Finalize the checkout and create a WooCommerce order.</p>
+
+                    <h4>Request Body</h4>
+                    <div class="docs-code-block">
+                        <pre><code>{
+  "payment_method": "stripe",
+  "payment_intent_id": "pi_xyz123",
+  "billing_address": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "address_1": "123 Main St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10001",
+    "country": "US",
+    "email": "customer@example.com",
+    "phone": "+1234567890"
+  },
+  "shipping_method_id": "flat_rate"
+}</code></pre>
+                    </div>
+
+                    <h4>Example Response</h4>
+                    <div class="docs-code-block">
+                        <pre><code>{
+  "order_id": 456,
+  "order_number": "456",
+  "status": "processing",
+  "total": "75.38",
+  "customer": {...},
+  "items": [...],
+  "created_at": "2025-01-15T15:30:00Z"
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Webhooks -->
+            <section id="webhooks" class="docs-section">
+                <h2>Webhooks (Pro Only)</h2>
+                <p>Webhooks allow your AI agent to receive real-time notifications when events occur in your WooCommerce store.</p>
+
+                <h3>Supported Events</h3>
+                <table class="docs-table">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>order.created</code></td>
+                            <td>A new order has been created</td>
+                        </tr>
+                        <tr>
+                            <td><code>order.updated</code></td>
+                            <td>An order status has been updated</td>
+                        </tr>
+                        <tr>
+                            <td><code>order.completed</code></td>
+                            <td>An order has been marked as completed</td>
+                        </tr>
+                        <tr>
+                            <td><code>order.cancelled</code></td>
+                            <td>An order has been cancelled</td>
+                        </tr>
+                        <tr>
+                            <td><code>order.refunded</code></td>
+                            <td>A refund has been issued for an order</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Webhook Payload</h3>
+                <div class="docs-code-block">
+                    <pre><code>{
+  "event": "order.created",
+  "timestamp": "2025-01-15T15:30:00Z",
+  "data": {
+    "order_id": 456,
+    "order_number": "456",
+    "status": "processing",
+    "total": "75.38",
+    "customer": {
+      "email": "customer@example.com",
+      "first_name": "John",
+      "last_name": "Doe"
+    },
+    "items": [...]
+  }
+}</code></pre>
+                </div>
+
+                <h3>Verifying Webhook Signatures</h3>
+                <p>All webhooks include an HMAC signature in the <code>X-WCP-Signature</code> header. Always verify this signature to ensure the webhook came from WooACP.</p>
+
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span>Node.js Example</span>
+                    </div>
+                    <pre><code>const crypto = require('crypto');
+
+function verifyWebhook(payload, signature, secret) {
+  const expectedSignature = crypto
+    .createHmac('sha256', secret)
+    .update(payload)
+    .digest('hex');
+
+  return signature === `sha256=${expectedSignature}`;
+}
+
+// In your webhook handler
+app.post('/webhooks/wooacp', (req, res) => {
+  const signature = req.headers['x-wcp-signature'];
+  const payload = JSON.stringify(req.body);
+
+  if (!verifyWebhook(payload, signature, signingSecret)) {
+    return res.status(401).send('Invalid signature');
+  }
+
+  // Process webhook
+  console.log('Received event:', req.body.event);
+  res.status(200).send('OK');
+});</code></pre>
+                </div>
+
+                <h3>Webhook Retry Policy</h3>
+                <p>If your webhook endpoint returns a non-200 status code, WooACP will retry the webhook with exponential backoff:</p>
+                <ul class="docs-list">
+                    <li>Retry 1: After 1 minute</li>
+                    <li>Retry 2: After 5 minutes</li>
+                    <li>Retry 3: After 15 minutes</li>
+                    <li>Retry 4: After 1 hour</li>
+                    <li>Retry 5: After 6 hours (final attempt)</li>
+                </ul>
+            </section>
+
+            <!-- Security -->
+            <section id="security" class="docs-section">
+                <h2>Security Best Practices</h2>
+
+                <div class="docs-callout docs-callout-warning">
+                    <h4>🔐 Security Checklist</h4>
+                    <ul>
+                        <li>✅ Always use HTTPS in production</li>
+                        <li>✅ Store API keys and signing secrets securely (use environment variables)</li>
+                        <li>✅ Verify HMAC signatures on all webhooks</li>
+                        <li>✅ Use idempotency keys to prevent duplicate orders</li>
+                        <li>✅ Implement rate limiting on your webhook endpoints</li>
+                        <li>✅ Regularly rotate your API credentials</li>
+                        <li>✅ Monitor API usage for suspicious activity</li>
+                    </ul>
+                </div>
+
+                <h3>Idempotency Keys</h3>
+                <p>To prevent duplicate orders from network retries, include an idempotency key with checkout requests:</p>
+
+                <div class="docs-code-block">
+                    <pre><code>{
+  "items": [...],
+  "customer": {...},
+  "idempotency_key": "unique-request-id-" + Date.now()
+}</code></pre>
+                </div>
+
+                <p>If the same idempotency key is used within 24 hours, WooACP will return the original response instead of creating a duplicate.</p>
+            </section>
+
+            <!-- Code Examples -->
+            <section id="examples" class="docs-section">
+                <h2>Code Examples</h2>
+
+                <h3>Complete Purchase Flow</h3>
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span>JavaScript/TypeScript</span>
+                    </div>
+                    <pre><code>const WooACPClient = require('wooacp-client');
+
+const client = new WooACPClient({
+  baseUrl: 'https://your-store.com',
+  apiKey: process.env.WOOACP_API_KEY,
+  signingSecret: process.env.WOOACP_SIGNING_SECRET
+});
+
+async function completePurchase() {
+  // 1. Search for products
+  const products = await client.products.list({
+    search: 'laptop',
+    per_page: 5
+  });
+
+  console.log(`Found ${products.pagination.total} laptops`);
+
+  // 2. Create checkout session
+  const session = await client.checkout.createSession({
+    items: [
+      { product_id: products.products[0].id, quantity: 1 }
+    ],
+    customer: {
+      email: 'customer@example.com',
+      first_name: 'John',
+      last_name: 'Doe'
+    },
+    idempotency_key: `order-${Date.now()}`
+  });
+
+  console.log(`Session created: ${session.session_id}`);
+
+  // 3. Calculate shipping
+  const shipping = await client.checkout.calculateShipping(session.session_id, {
+    shipping_address: {
+      first_name: 'John',
+      last_name: 'Doe',
+      address_1: '123 Main St',
+      city: 'New York',
+      state: 'NY',
+      postcode: '10001',
+      country: 'US'
+    }
+  });
+
+  console.log('Shipping options:', shipping.shipping_methods);
+
+  // 4. Complete the order
+  const order = await client.checkout.complete(session.session_id, {
+    payment_method: 'stripe',
+    payment_intent_id: 'pi_123abc',
+    billing_address: { /* ... */ },
+    shipping_method_id: shipping.shipping_methods[0].id
+  });
+
+  console.log(`Order created: #${order.order_number}`);
+  return order;
+}</code></pre>
+                </div>
+
+                <h3>Python Example</h3>
+                <div class="docs-code-block">
+                    <div class="docs-code-header">
+                        <span>Python</span>
+                    </div>
+                    <pre><code>from wooacp import WooACPClient
+import os
+
+client = WooACPClient(
+    base_url='https://your-store.com',
+    api_key=os.getenv('WOOACP_API_KEY'),
+    signing_secret=os.getenv('WOOACP_SIGNING_SECRET')
+)
+
+# Search products
+products = client.products.list(search='laptop', per_page=5)
+print(f"Found {products['pagination']['total']} laptops")
+
+# Create checkout session
+session = client.checkout.create_session(
+    items=[
+        {'product_id': products['products'][0]['id'], 'quantity': 1}
+    ],
+    customer={
+        'email': 'customer@example.com',
+        'first_name': 'John',
+        'last_name': 'Doe'
+    },
+    idempotency_key=f"order-{int(time.time())}"
+)
+
+# Complete order
+order = client.checkout.complete(
+    session['session_id'],
+    payment_method='stripe',
+    payment_intent_id='pi_123abc',
+    billing_address={...},
+    shipping_method_id='flat_rate'
+)
+
+print(f"Order created: #{order['order_number']}")</code></pre>
+                </div>
+            </section>
+
+            <!-- Troubleshooting -->
+            <section id="troubleshooting" class="docs-section">
+                <h2>Troubleshooting</h2>
+
+                <h3>Common Issues</h3>
+
+                <div class="docs-troubleshoot">
+                    <h4>401 Unauthorized Error</h4>
+                    <p><strong>Cause:</strong> Invalid API key or missing authentication header.</p>
+                    <p><strong>Solution:</strong> Verify your API key is correct and included in the <code>X-WCP-API-Key</code> header.</p>
+                </div>
+
+                <div class="docs-troubleshoot">
+                    <h4>403 Forbidden - Invalid Signature</h4>
+                    <p><strong>Cause:</strong> HMAC signature doesn't match the request body.</p>
+                    <p><strong>Solution:</strong> Ensure you're using the correct signing secret and computing the HMAC correctly. The signature must be generated from the exact request body string.</p>
+                </div>
+
+                <div class="docs-troubleshoot">
+                    <h4>404 Product Not Found</h4>
+                    <p><strong>Cause:</strong> Product ID doesn't exist or is not published.</p>
+                    <p><strong>Solution:</strong> Check the product exists in WooCommerce and is published. Only published products are available via the API.</p>
+                </div>
+
+                <div class="docs-troubleshoot">
+                    <h4>422 Session Expired</h4>
+                    <p><strong>Cause:</strong> Checkout session has expired (sessions expire after 1 hour).</p>
+                    <p><strong>Solution:</strong> Create a new checkout session. Don't store session IDs for long periods.</p>
+                </div>
+
+                <div class="docs-troubleshoot">
+                    <h4>429 Rate Limit Exceeded</h4>
+                    <p><strong>Cause:</strong> Too many requests in a short time period.</p>
+                    <p><strong>Solution:</strong> Implement exponential backoff and respect rate limit headers. Free plan: 60 requests/minute. Pro plan: 300 requests/minute.</p>
+                </div>
+
+                <h3>Debug Mode</h3>
+                <p>Enable debug mode in the WooACP settings to log all API requests and responses:</p>
+                <ol class="docs-list">
+                    <li>Go to <strong>WooCommerce → Settings → WooACP</strong></li>
+                    <li>Enable <strong>Debug Mode</strong></li>
+                    <li>Check logs at <strong>WooCommerce → Status → Logs</strong></li>
+                </ol>
+
+                <div class="docs-callout docs-callout-warning">
+                    <p><strong>⚠️ Warning:</strong> Debug mode can expose sensitive data. Only enable it temporarily for troubleshooting and disable it in production.</p>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq" class="docs-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="docs-faq-item">
+                    <h4>What's the difference between Free and Pro?</h4>
+                    <p>The Free version provides read-only access to your product catalog. The Pro version unlocks the full checkout API, webhooks, unlimited site licenses, and priority support.</p>
+                </div>
+
+                <div class="docs-faq-item">
+                    <h4>Can I use WooACP with any AI agent?</h4>
+                    <p>Yes! WooACP is AI-agnostic. Any system that can make HTTP requests can integrate with the API. We provide SDKs for popular languages to make integration easier.</p>
+                </div>
+
+                <div class="docs-faq-item">
+                    <h4>How do I handle payments?</h4>
+                    <p>WooACP integrates with your existing WooCommerce payment gateways. Your AI agent should collect payment on its end (via Stripe, PayPal, etc.) and then pass the payment confirmation to the checkout completion endpoint.</p>
+                </div>
+
+                <div class="docs-faq-item">
+                    <h4>Are webhooks guaranteed to be delivered?</h4>
+                    <p>We make a best effort to deliver webhooks with automatic retries. However, you should implement idempotency on your end and periodically poll for order status if webhook delivery is critical.</p>
+                </div>
+
+                <div class="docs-faq-item">
+                    <h4>Can I test the API in a sandbox environment?</h4>
+                    <p>Yes, we recommend setting up a staging WooCommerce site for testing. You can generate separate API credentials for your staging and production environments.</p>
+                </div>
+
+                <div class="docs-faq-item">
+                    <h4>What happens if I exceed the rate limit?</h4>
+                    <p>You'll receive a 429 status code with a <code>Retry-After</code> header indicating when you can retry. Implement exponential backoff to handle rate limits gracefully.</p>
+                </div>
+
+                <div class="docs-faq-item">
+                    <h4>How do I upgrade from Free to Pro?</h4>
+                    <p>Purchase the Pro version, install it (it will override the free version), and activate with your license key. Your existing API credentials will continue to work.</p>
+                </div>
+
+                <div class="docs-faq-item">
+                    <h4>Is WooACP compatible with my WooCommerce plugins?</h4>
+                    <p>WooACP works with standard WooCommerce functionality. Compatibility with third-party plugins depends on the plugin. Tax, shipping, and payment gateway plugins should work normally.</p>
+                </div>
+            </section>
+
+            <!-- Support -->
+            <section id="support" class="docs-section">
+                <h2>Need Help?</h2>
+                <div class="docs-support-grid">
+                    <div class="docs-support-card">
+                        <h4>📧 Email Support</h4>
+                        <p>Pro customers get priority email support with 24-hour response time.</p>
+                        <a href="mailto:support@wooacp.com" class="btn-outline">Contact Support</a>
+                    </div>
+                    <div class="docs-support-card">
+                        <h4>💬 Community Forum</h4>
+                        <p>Join our community forum to ask questions and share experiences.</p>
+                        <a href="#" class="btn-outline">Visit Forum</a>
+                    </div>
+                    <div class="docs-support-card">
+                        <h4>🐛 Report a Bug</h4>
+                        <p>Found a bug? Report it on GitHub and help us improve WooACP.</p>
+                        <a href="https://github.com/yairbarak22/WooACP/issues" class="btn-outline" target="_blank">Report Issue</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">WooACP</div>
+                    <p class="footer-copyright">© 2025 WooACP. All rights reserved.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="https://wordpress.org/plugins/wooacp/">Download Free</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
