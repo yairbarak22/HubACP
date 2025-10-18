@@ -1,4 +1,4 @@
-Functional Specification: WooACP Official Website
+Functional Specification: HubACP Official Website
 
 Version: 1.0
 Date: October 13, 2025
@@ -7,17 +7,17 @@ Author: [Your Name]
 1. Introduction & Objectives
 
 1.1. Document Purpose
-This document defines the functional requirements for the official website of the WooACP (WooCommerce Agentic Commerce Protocol) plugin. This website will serve as the central hub for marketing, sales, distribution, and support for the product.
+This document defines the functional requirements for the official website of the HubACP (WooCommerce Agentic Commerce Protocol) plugin. This website will serve as the central hub for marketing, sales, distribution, and support for the product.
 
 1.2. Website Objectives
 
-Lead Generation: Encourage a maximum number of users to download and install the free version of the plugin (WooACP Connect) from the WordPress.org repository.
+Lead Generation: Encourage a maximum number of users to download and install the free version of the plugin (HubACP Connect) from the WordPress.org repository.
 
 Sales Conversion: Convert free users and new visitors into paying subscribers of the Pro version.
 
 Customer Enablement: Provide comprehensive documentation and a clear entry point for technical support to reduce the support workload.
 
-Brand Authority: Establish WooACP as the leading, most professional solution for AI-driven commerce in the WooCommerce ecosystem.
+Brand Authority: Establish HubACP as the leading, most professional solution for AI-driven commerce in the WooCommerce ecosystem.
 
 1.3. Target Audiences
 
@@ -69,7 +69,7 @@ The website will be structured with the following pages and sections:
 
 3.1. Main Navigation Header
 
-Logo: The official WooACP logo.
+Logo: The official HubACP logo.
 
 Primary Links: Pricing, Docs, Blog, Support.
 
@@ -90,7 +90,7 @@ Newsletter Signup: A simple form to capture email addresses for marketing update
 4. Core Page Functional Specifications
 
 4.1. Homepage
-The homepage is the primary marketing tool. Its goal is to quickly communicate the value of WooACP and drive one of two actions: download the free version or view pricing for Pro.
+The homepage is the primary marketing tool. Its goal is to quickly communicate the value of HubACP and drive one of two actions: download the free version or view pricing for Pro.
 
 Hero Section:
 

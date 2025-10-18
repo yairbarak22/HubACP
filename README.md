@@ -1,6 +1,6 @@
-# WooACP Marketing Website
+# HubACP Marketing Website
 
-![WooACP](https://img.shields.io/badge/WooACP-Marketing%20Website-8b5cf6?style=for-the-badge)
+![HubACP](https://img.shields.io/badge/HubACP-Marketing%20Website-8b5cf6?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
@@ -24,7 +24,7 @@
 
 ## 🎯 Overview
 
-This is a complete, production-ready marketing website for **WooACP** (WooCommerce Agentic Commerce Protocol). The website is designed to showcase the plugin's capabilities, provide comprehensive documentation, and drive conversions through clear CTAs.
+This is a complete, production-ready marketing website for **HubACP** (WooCommerce Agentic Commerce Protocol). The website is designed to showcase the plugin's capabilities, provide comprehensive documentation, and drive conversions through clear CTAs.
 
 ### Key Highlights
 
@@ -260,7 +260,7 @@ Desktop: ≥ 1024px
 
 **Content:**
 - Main headline: "Let ChatGPT Close the Deal."
-- Subtitle explaining WooACP's value proposition
+- Subtitle explaining HubACP's value proposition
 - Two CTA buttons: "Download Free Version" (primary), "Get Pro" (secondary)
 - Social proof: "Trusted by 150+ companies • 98% success rate • 24-hour setup"
 
@@ -329,7 +329,7 @@ Desktop: ≥ 1024px
 
 **Free Plan:**
 - $0
-- WooACP Connect
+- HubACP Connect
 - Product Feed API
 - Community Support
 - Button: "Download Free Version"
@@ -371,7 +371,7 @@ Desktop: ≥ 1024px
 
 **Content:**
 - 4 columns:
-  - **WooACP** - Logo and copyright
+  - **HubACP** - Logo and copyright
   - **Product** - Features, Pricing, Download
   - **Resources** - Documentation, Support, Blog
   - **Legal** - Terms, Privacy
@@ -520,13 +520,13 @@ vercel --prod
 ```php
 <?php
 /**
- * Template Name: WooACP Landing Page
+ * Template Name: HubACP Landing Page
  */
 
 get_header();
 
 // Include the HTML content
-include get_template_directory() . '/wooacp/index.html';
+include get_template_directory() . '/hubacp/index.html';
 
 get_footer();
 ?>
@@ -535,23 +535,23 @@ get_footer();
 Enqueue styles and scripts:
 
 ```php
-function wooacp_enqueue_assets() {
+function hubacp_enqueue_assets() {
     wp_enqueue_style(
-        'wooacp-style',
-        get_template_directory_uri() . '/wooacp/style.css',
+        'hubacp-style',
+        get_template_directory_uri() . '/hubacp/style.css',
         array(),
         '1.0.0'
     );
 
     wp_enqueue_script(
-        'wooacp-script',
-        get_template_directory_uri() . '/wooacp/script.js',
+        'hubacp-script',
+        get_template_directory_uri() . '/hubacp/script.js',
         array(),
         '1.0.0',
         true
     );
 }
-add_action('wp_enqueue_scripts', 'wooacp_enqueue_assets');
+add_action('wp_enqueue_scripts', 'hubacp_enqueue_assets');
 ```
 
 ### Option 3: CDN Deployment
@@ -643,7 +643,7 @@ This project is licensed under the MIT License - see below for details.
 ```
 MIT License
 
-Copyright (c) 2025 WooACP
+Copyright (c) 2025 HubACP
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -666,10 +666,10 @@ SOFTWARE.
 
 ## 📞 Support
 
-- **Website:** [https://wooacp.com](https://wooacp.com)
+- **Website:** [https://hubacp.com](https://hubacp.com)
 - **Documentation:** [docs.html](./docs.html)
-- **GitHub Issues:** [Report a bug](https://github.com/yairbarak22/WooACP/issues)
-- **Email:** support@wooacp.com
+- **GitHub Issues:** [Report a bug](https://github.com/yairbarak22/HubACP/issues)
+- **Email:** support@hubacp.com
 
 ## 🙏 Acknowledgments
 
@@ -680,6 +680,6 @@ SOFTWARE.
 
 ---
 
-**Built with ❤️ by the WooACP Team**
+**Built with ❤️ by the HubACP Team**
 
 🤖 *Generated with [Claude Code](https://claude.com/claude-code)*

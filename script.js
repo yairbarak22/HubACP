@@ -1,5 +1,5 @@
 // ================================
-// WooACP Website - Production-Ready JavaScript
+// HubACP Website - Production-Ready JavaScript
 // ================================
 
 (function() {
@@ -399,7 +399,7 @@
     // Mark page as loaded
     document.body.classList.add('loaded');
 
-    console.log('%cWooACP Website Loaded Successfully!', 'font-size: 16px; font-weight: bold; color: #8b5cf6;');
+    console.log('%cHubACP Website Loaded Successfully!', 'font-size: 16px; font-weight: bold; color: #8b5cf6;');
   }
 
   // ================================

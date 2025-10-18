@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WooACP Documentation - Complete Guide</title>
-    <meta name="description" content="Complete documentation for WooACP - Learn how to integrate AI-powered commerce into your WooCommerce store.">
+    <title>HubACP Documentation - Complete Guide</title>
+    <meta name="description" content="Complete documentation for HubACP - Learn how to integrate AI-powered commerce into your WooCommerce store.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
         <nav class="nav-container">
             <div class="logo">
                 <a href="index.html" class="logo-link">
-                    <span class="logo-text">WooACP</span>
+                    <span class="logo-text">HubACP</span>
                 </a>
             </div>
 
@@ -35,7 +35,7 @@
 
             <!-- Desktop CTA -->
             <div class="nav-actions">
-                <a href="https://wordpress.org/plugins/wooacp/" class="btn-secondary">Download Free Version</a>
+                <a href="https://wordpress.org/plugins/hubacp/" class="btn-secondary">Download Free Version</a>
                 <a href="index.html#pricing" class="btn-primary">Get Pro</a>
             </div>
 
@@ -63,7 +63,7 @@
                     <li><a href="docs.html" class="mobile-nav-link active">Docs</a></li>
                 </ul>
                 <div class="mobile-nav-cta">
-                    <a href="https://wordpress.org/plugins/wooacp/" class="btn-secondary btn-large mobile-nav-link">Download Free Version</a>
+                    <a href="https://wordpress.org/plugins/hubacp/" class="btn-secondary btn-large mobile-nav-link">Download Free Version</a>
                     <a href="index.html#pricing" class="btn-primary btn-large mobile-nav-link">Get Pro</a>
                 </div>
             </div>
@@ -96,14 +96,14 @@
         <main class="docs-content">
             <!-- Introduction -->
             <section id="introduction" class="docs-section">
-                <h1>WooACP Documentation</h1>
-                <p class="lead">Welcome to the complete guide for WooACP (WooCommerce Agentic Commerce Protocol) - the definitive API that empowers AI agents to interact with your WooCommerce store.</p>
+                <h1>HubACP Documentation</h1>
+                <p class="lead">Welcome to the complete guide for HubACP (WooCommerce Agentic Commerce Protocol) - the definitive API that empowers AI agents to interact with your WooCommerce store.</p>
             </section>
 
             <!-- Getting Started -->
             <section id="getting-started" class="docs-section">
                 <h2>Getting Started</h2>
-                <p>WooACP provides a comprehensive REST API that allows AI agents to browse products, manage checkouts, and complete purchases in your WooCommerce store. This guide will help you get up and running quickly.</p>
+                <p>HubACP provides a comprehensive REST API that allows AI agents to browse products, manage checkouts, and complete purchases in your WooCommerce store. This guide will help you get up and running quickly.</p>
 
                 <div class="docs-callout docs-callout-info">
                     <h4>What You'll Need</h4>
@@ -124,13 +124,13 @@
                 <ol class="docs-list">
                     <li>Log in to your WordPress admin panel</li>
                     <li>Navigate to <strong>Plugins → Add New</strong></li>
-                    <li>Search for "WooACP"</li>
+                    <li>Search for "HubACP"</li>
                     <li>Click <strong>Install Now</strong> and then <strong>Activate</strong></li>
                 </ol>
 
                 <h3>Option 2: Manual Installation</h3>
                 <ol class="docs-list">
-                    <li>Download the plugin ZIP file from <a href="https://wordpress.org/plugins/wooacp/" target="_blank">WordPress.org</a></li>
+                    <li>Download the plugin ZIP file from <a href="https://wordpress.org/plugins/hubacp/" target="_blank">WordPress.org</a></li>
                     <li>Navigate to <strong>Plugins → Add New → Upload Plugin</strong></li>
                     <li>Choose the downloaded ZIP file and click <strong>Install Now</strong></li>
                     <li>Click <strong>Activate Plugin</strong></li>
@@ -141,7 +141,7 @@
                     <li>Purchase and download the Pro version from our website</li>
                     <li>Navigate to <strong>Plugins → Add New → Upload Plugin</strong></li>
                     <li>Upload the Pro ZIP file and activate</li>
-                    <li>Enter your license key in <strong>WooCommerce → Settings → WooACP</strong></li>
+                    <li>Enter your license key in <strong>WooCommerce → Settings → HubACP</strong></li>
                 </ol>
             </section>
 
@@ -150,7 +150,7 @@
                 <h2>Configuration</h2>
 
                 <h3>Step 1: Access Settings</h3>
-                <p>Navigate to <strong>WooCommerce → Settings → WooACP</strong> in your WordPress admin panel.</p>
+                <p>Navigate to <strong>WooCommerce → Settings → HubACP</strong> in your WordPress admin panel.</p>
 
                 <h3>Step 2: Generate API Credentials</h3>
                 <p>Click the <strong>"Generate New Credentials"</strong> button to create your API key and signing secret.</p>
@@ -175,14 +175,14 @@ Signing Secret: sec_xyz789abc123def456</code></pre>
                     <div class="docs-code-header">
                         <span>Example Webhook URL</span>
                     </div>
-                    <pre><code>https://your-ai-agent.com/webhooks/wooacp</code></pre>
+                    <pre><code>https://your-ai-agent.com/webhooks/hubacp</code></pre>
                 </div>
             </section>
 
             <!-- API Overview -->
             <section id="api-overview" class="docs-section">
                 <h2>API Overview</h2>
-                <p>The WooACP API is organized around REST principles with predictable, resource-oriented URLs. It uses standard HTTP response codes and returns JSON-encoded responses.</p>
+                <p>The HubACP API is organized around REST principles with predictable, resource-oriented URLs. It uses standard HTTP response codes and returns JSON-encoded responses.</p>
 
                 <h3>Base URL</h3>
                 <div class="docs-code-block">
@@ -213,7 +213,7 @@ Signing Secret: sec_xyz789abc123def456</code></pre>
             <!-- Authentication -->
             <section id="authentication" class="docs-section">
                 <h2>Authentication</h2>
-                <p>WooACP uses API key authentication with HMAC signature verification for secure communication.</p>
+                <p>HubACP uses API key authentication with HMAC signature verification for secure communication.</p>
 
                 <h3>Authentication Header</h3>
                 <div class="docs-code-block">
@@ -544,7 +544,7 @@ X-WCP-API-Key: wcp_abc123def456ghi789</code></pre>
                 </div>
 
                 <h3>Verifying Webhook Signatures</h3>
-                <p>All webhooks include an HMAC signature in the <code>X-WCP-Signature</code> header. Always verify this signature to ensure the webhook came from WooACP.</p>
+                <p>All webhooks include an HMAC signature in the <code>X-WCP-Signature</code> header. Always verify this signature to ensure the webhook came from HubACP.</p>
 
                 <div class="docs-code-block">
                     <div class="docs-code-header">
@@ -577,7 +577,7 @@ app.post('/webhooks/wooacp', (req, res) => {
                 </div>
 
                 <h3>Webhook Retry Policy</h3>
-                <p>If your webhook endpoint returns a non-200 status code, WooACP will retry the webhook with exponential backoff:</p>
+                <p>If your webhook endpoint returns a non-200 status code, HubACP will retry the webhook with exponential backoff:</p>
                 <ul class="docs-list">
                     <li>Retry 1: After 1 minute</li>
                     <li>Retry 2: After 5 minutes</li>
@@ -615,7 +615,7 @@ app.post('/webhooks/wooacp', (req, res) => {
 }</code></pre>
                 </div>
 
-                <p>If the same idempotency key is used within 24 hours, WooACP will return the original response instead of creating a duplicate.</p>
+                <p>If the same idempotency key is used within 24 hours, HubACP will return the original response instead of creating a duplicate.</p>
             </section>
 
             <!-- Code Examples -->
@@ -627,12 +627,12 @@ app.post('/webhooks/wooacp', (req, res) => {
                     <div class="docs-code-header">
                         <span>JavaScript/TypeScript</span>
                     </div>
-                    <pre><code>const WooACPClient = require('wooacp-client');
+                    <pre><code>const HubACPClient = require('hubacp-client');
 
-const client = new WooACPClient({
+const client = new HubACPClient({
   baseUrl: 'https://your-store.com',
-  apiKey: process.env.WOOACP_API_KEY,
-  signingSecret: process.env.WOOACP_SIGNING_SECRET
+  apiKey: process.env.HUBACP_API_KEY,
+  signingSecret: process.env.HUBACP_SIGNING_SECRET
 });
 
 async function completePurchase() {
@@ -692,13 +692,13 @@ async function completePurchase() {
                     <div class="docs-code-header">
                         <span>Python</span>
                     </div>
-                    <pre><code>from wooacp import WooACPClient
+                    <pre><code>from hubacp import HubACPClient
 import os
 
-client = WooACPClient(
+client = HubACPClient(
     base_url='https://your-store.com',
-    api_key=os.getenv('WOOACP_API_KEY'),
-    signing_secret=os.getenv('WOOACP_SIGNING_SECRET')
+    api_key=os.getenv('HUBACP_API_KEY'),
+    signing_secret=os.getenv('HUBACP_SIGNING_SECRET')
 )
 
 # Search products
@@ -768,9 +768,9 @@ print(f"Order created: #{order['order_number']}")</code></pre>
                 </div>
 
                 <h3>Debug Mode</h3>
-                <p>Enable debug mode in the WooACP settings to log all API requests and responses:</p>
+                <p>Enable debug mode in the HubACP settings to log all API requests and responses:</p>
                 <ol class="docs-list">
-                    <li>Go to <strong>WooCommerce → Settings → WooACP</strong></li>
+                    <li>Go to <strong>WooCommerce → Settings → HubACP</strong></li>
                     <li>Enable <strong>Debug Mode</strong></li>
                     <li>Check logs at <strong>WooCommerce → Status → Logs</strong></li>
                 </ol>
@@ -790,13 +790,13 @@ print(f"Order created: #{order['order_number']}")</code></pre>
                 </div>
 
                 <div class="docs-faq-item">
-                    <h4>Can I use WooACP with any AI agent?</h4>
-                    <p>Yes! WooACP is AI-agnostic. Any system that can make HTTP requests can integrate with the API. We provide SDKs for popular languages to make integration easier.</p>
+                    <h4>Can I use HubACP with any AI agent?</h4>
+                    <p>Yes! HubACP is AI-agnostic. Any system that can make HTTP requests can integrate with the API. We provide SDKs for popular languages to make integration easier.</p>
                 </div>
 
                 <div class="docs-faq-item">
                     <h4>How do I handle payments?</h4>
-                    <p>WooACP integrates with your existing WooCommerce payment gateways. Your AI agent should collect payment on its end (via Stripe, PayPal, etc.) and then pass the payment confirmation to the checkout completion endpoint.</p>
+                    <p>HubACP integrates with your existing WooCommerce payment gateways. Your AI agent should collect payment on its end (via Stripe, PayPal, etc.) and then pass the payment confirmation to the checkout completion endpoint.</p>
                 </div>
 
                 <div class="docs-faq-item">
@@ -820,8 +820,8 @@ print(f"Order created: #{order['order_number']}")</code></pre>
                 </div>
 
                 <div class="docs-faq-item">
-                    <h4>Is WooACP compatible with my WooCommerce plugins?</h4>
-                    <p>WooACP works with standard WooCommerce functionality. Compatibility with third-party plugins depends on the plugin. Tax, shipping, and payment gateway plugins should work normally.</p>
+                    <h4>Is HubACP compatible with my WooCommerce plugins?</h4>
+                    <p>HubACP works with standard WooCommerce functionality. Compatibility with third-party plugins depends on the plugin. Tax, shipping, and payment gateway plugins should work normally.</p>
                 </div>
             </section>
 
@@ -832,7 +832,7 @@ print(f"Order created: #{order['order_number']}")</code></pre>
                     <div class="docs-support-card">
                         <h4>📧 Email Support</h4>
                         <p>Pro customers get priority email support with 24-hour response time.</p>
-                        <a href="mailto:support@wooacp.com" class="btn-outline">Contact Support</a>
+                        <a href="mailto:support@hubacp.com" class="btn-outline">Contact Support</a>
                     </div>
                     <div class="docs-support-card">
                         <h4>💬 Community Forum</h4>
@@ -841,8 +841,8 @@ print(f"Order created: #{order['order_number']}")</code></pre>
                     </div>
                     <div class="docs-support-card">
                         <h4>🐛 Report a Bug</h4>
-                        <p>Found a bug? Report it on GitHub and help us improve WooACP.</p>
-                        <a href="https://github.com/yairbarak22/WooACP/issues" class="btn-outline" target="_blank">Report Issue</a>
+                        <p>Found a bug? Report it on GitHub and help us improve HubACP.</p>
+                        <a href="https://github.com/yairbarak22/HubACP/issues" class="btn-outline" target="_blank">Report Issue</a>
                     </div>
                 </div>
             </section>
@@ -854,8 +854,8 @@ print(f"Order created: #{order['order_number']}")</code></pre>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <div class="footer-logo">WooACP</div>
-                    <p class="footer-copyright">© 2025 WooACP. All rights reserved.</p>
+                    <div class="footer-logo">HubACP</div>
+                    <p class="footer-copyright">© 2025 HubACP. All rights reserved.</p>
                 </div>
 
                 <div class="footer-column">
@@ -863,7 +863,7 @@ print(f"Order created: #{order['order_number']}")</code></pre>
                     <ul class="footer-links">
                         <li><a href="index.html#features">Features</a></li>
                         <li><a href="index.html#pricing">Pricing</a></li>
-                        <li><a href="https://wordpress.org/plugins/wooacp/">Download Free</a></li>
+                        <li><a href="https://wordpress.org/plugins/hubacp/">Download Free</a></li>
                     </ul>
                 </div>
 
