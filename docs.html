@@ -162,8 +162,8 @@
                     <li>Click <strong>Activate Plugin</strong></li>
                 </ol>
 
-                <h3>Option 3: Pro Version ($12/month)</h3>
-                <p>The Pro version unlocks unlimited products, full checkout integration, payment processing, and webhooks.</p>
+                <h3>Option 3: Pro Version ($99/year)</h3>
+                <p>The Pro version unlocks unlimited products in the feed and priority support. All checkout, payment, and webhook features are available in the Free version too!</p>
                 <ol class="docs-list">
                     <li>Purchase Pro license via Freemius secure checkout</li>
                     <li>Download the Pro version ZIP file</li>
@@ -307,31 +307,31 @@
                             <td><code>POST</code></td>
                             <td><code>/acp/v1/checkout-sessions</code></td>
                             <td>Create checkout session</td>
-                            <td><strong>Pro</strong></td>
+                            <td>Free/Pro</td>
                         </tr>
                         <tr>
                             <td><code>POST</code></td>
                             <td><code>/acp/v1/checkout-sessions/{id}</code></td>
                             <td>Update session</td>
-                            <td><strong>Pro</strong></td>
+                            <td>Free/Pro</td>
                         </tr>
                         <tr>
                             <td><code>POST</code></td>
                             <td><code>/acp/v1/checkout-sessions/{id}/complete</code></td>
                             <td>Complete checkout</td>
-                            <td><strong>Pro</strong></td>
+                            <td>Free/Pro</td>
                         </tr>
                         <tr>
                             <td><code>GET</code></td>
                             <td><code>/acp/v1/checkout-sessions/{id}</code></td>
                             <td>Get session state</td>
-                            <td><strong>Pro</strong></td>
+                            <td>Free/Pro</td>
                         </tr>
                         <tr>
                             <td><code>POST</code></td>
                             <td><code>/acp/v1/checkout-sessions/{id}/cancel</code></td>
                             <td>Cancel session</td>
-                            <td><strong>Pro</strong></td>
+                            <td>Free/Pro</td>
                         </tr>
                     </tbody>
                 </table>
@@ -341,21 +341,23 @@
                     <div class="docs-feature-card">
                         <h4>🆓 Free Version</h4>
                         <ul>
-                            <li>Display up to <strong>3 products</strong></li>
-                            <li>Product browsing & search</li>
-                            <li>Basic API access</li>
-                            <li>Setup wizard</li>
-                            <li>Diagnostic tools</li>
+                            <li>Display up to <strong>2 products</strong> in ChatGPT</li>
+                            <li><strong>Full checkout integration</strong></li>
+                            <li><strong>Complete payment processing</strong></li>
+                            <li><strong>Real-time webhooks</strong></li>
+                            <li>All security features (HMAC-SHA256)</li>
+                            <li>Setup wizard & diagnostic tools</li>
+                            <li>Community support (72h response)</li>
                         </ul>
                     </div>
                     <div class="docs-feature-card">
-                        <h4>🚀 Pro Version ($12/mo)</h4>
+                        <h4>🚀 Pro Version ($99/year)</h4>
                         <ul>
-                            <li><strong>Unlimited products</strong></li>
-                            <li><strong>Full checkout API</strong></li>
-                            <li><strong>Payment processing</strong></li>
-                            <li>Real-time webhooks</li>
-                            <li>Priority email support</li>
+                            <li><strong>Unlimited products</strong> in ChatGPT feed</li>
+                            <li>All Free features included</li>
+                            <li><strong>Priority email support (24h response)</strong></li>
+                            <li><strong>Automatic plugin updates</strong></li>
+                            <li><strong>Analytics dashboard</strong> (coming soon)</li>
                         </ul>
                     </div>
                 </div>
@@ -579,13 +581,13 @@ X-WCP-API-Key: wcp_abc123def456ghi789</code></pre>
                     </div>
                 </div>
 
-                <h3>Checkout Sessions API (Pro Only)</h3>
+                <h3>Checkout Sessions API</h3>
                 <div class="docs-endpoint">
                     <div class="docs-endpoint-header">
                         <span class="docs-method docs-method-post">POST</span>
                         <code>/wp-json/acp/v1/checkout-sessions</code>
                     </div>
-                    <p>Create a new checkout session with cart items.</p>
+                    <p>Create a new checkout session with cart items. Available in both Free and Pro versions.</p>
 
                     <h4>Request Body</h4>
                     <div class="docs-code-block">
@@ -708,8 +710,8 @@ X-WCP-API-Key: wcp_abc123def456ghi789</code></pre>
 
             <!-- Webhooks -->
             <section id="webhooks" class="docs-section">
-                <h2>Webhooks (Pro Only)</h2>
-                <p>Webhooks provide real-time notifications when events occur in your WooCommerce store. Perfect for keeping ChatGPT synchronized with order status changes.</p>
+                <h2>Webhooks</h2>
+                <p>Webhooks provide real-time notifications when events occur in your WooCommerce store. Perfect for keeping ChatGPT synchronized with order status changes. Available in both Free and Pro versions.</p>
 
                 <h3>Supported Events (6 Types)</h3>
                 <table class="docs-table">
@@ -1075,7 +1077,9 @@ print(f"Order created: #{order['order_number']}")</code></pre>
 
                 <div class="docs-faq-item">
                     <h4>What's the difference between Free and Pro?</h4>
-                    <p><strong>Free version:</strong> ChatGPT can browse up to 3 products (read-only). <strong>Pro version ($12/month):</strong> Unlimited products + full checkout integration including payment processing, shipping calculation, tax calculation, order creation, and real-time webhooks.</p>
+                    <p><strong>Free version:</strong> Display up to 2 products in ChatGPT, full checkout integration, complete payment processing, real-time webhooks, all security features, and community support (72h response).</p>
+                    <p><strong>Pro version ($99/year):</strong> Everything in Free PLUS unlimited products in ChatGPT feed, priority email support (24h response), automatic updates, and analytics dashboard (coming soon).</p>
+                    <p><strong>Important:</strong> All core commerce features (checkout, payments, webhooks, security) are included in the Free version! The main Pro benefits are unlimited products and priority support.</p>
                 </div>
 
                 <div class="docs-faq-item">
