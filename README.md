@@ -4,7 +4,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-> **Let ChatGPT Close the Deal** - The definitive API that empowers AI agents to go from conversation to conversion in your WooCommerce store.
+> **ChatGPT Commerce for WooCommerce** - Transform your WooCommerce store into an AI-ready commerce platform. Enable ChatGPT to browse products and complete purchases through conversational commerce.
 
 ## 📋 Table of Contents
 
