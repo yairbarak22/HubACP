@@ -281,13 +281,13 @@
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            Display up to <strong>3 products</strong>
+                            Display up to <strong>3 products</strong> in ChatGPT
                         </li>
                         <li>
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            Product browsing & search
+                            Product browsing and search
                         </li>
                         <li>
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -299,13 +299,19 @@
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            Setup wizard
+                            Setup wizard with guided onboarding
                         </li>
                         <li>
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            Diagnostic tools
+                            Modern, animated admin interface
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Comprehensive diagnostic tools
                         </li>
                     </ul>
                     <a href="https://wordpress.org/plugins/hubacp/" class="btn-outline">Download Free</a>
@@ -328,31 +334,37 @@
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <strong>Unlimited products</strong>
+                            <strong>Unlimited products</strong> displayed in ChatGPT
                         </li>
                         <li>
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <strong>Full checkout integration</strong>
+                            <strong>Full checkout integration</strong> - Complete purchases via ChatGPT
                         </li>
                         <li>
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <strong>Payment processing</strong>
+                            <strong>Payment processing</strong> through ChatGPT conversations
                         </li>
                         <li>
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            Real-time webhooks
+                            Real-time webhooks for order updates
                         </li>
                         <li>
                             <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
                             Priority email support
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Advanced analytics (coming soon)
                         </li>
                     </ul>
                     <a href="#buy-pro" class="btn-primary">Upgrade to Pro</a>
@@ -390,7 +402,8 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>Free version: ChatGPT can browse up to 3 products (read-only). Pro version ($12/month): Unlimited products + full checkout integration including payment processing, shipping calculation, tax calculation, order creation, and real-time webhooks.</p>
+                            <p><strong>Free version:</strong> ChatGPT can browse up to 3 products (read-only), product browsing and search, basic API access, setup wizard with guided onboarding, modern animated admin interface, and comprehensive diagnostic tools.</p>
+                            <p><strong>Pro version ($12/month):</strong> Unlimited products displayed in ChatGPT, full checkout integration - complete purchases via ChatGPT, payment processing through ChatGPT conversations, real-time webhooks for order updates, priority email support, and advanced analytics (coming soon).</p>
                         </div>
                     </div>
                 </div>
@@ -404,7 +417,15 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>When a customer tells ChatGPT they want to buy something, ChatGPT uses our API to: (1) Create a checkout session with their items, (2) Calculate shipping costs to their address, (3) Calculate applicable taxes, (4) Process payment securely, (5) Create the order in your WooCommerce store. You get notified via webhook and the order appears in WooCommerce just like a normal order.</p>
+                            <p>When a customer tells ChatGPT they want to buy something (Pro feature), ChatGPT uses our secure API to:</p>
+                            <ol style="margin: 0.5rem 0 0 1.5rem;">
+                                <li>Create a checkout session with their items</li>
+                                <li>Calculate shipping costs to their address automatically</li>
+                                <li>Calculate applicable taxes</li>
+                                <li>Process payment securely</li>
+                                <li>Create the order in your WooCommerce store</li>
+                            </ol>
+                            <p style="margin-top: 0.5rem;">You get notified via real-time webhook and the order appears in WooCommerce just like a normal order. All communication is secured with HMAC-SHA256 authentication.</p>
                         </div>
                     </div>
                 </div>
@@ -418,7 +439,9 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>PHP 8.1+, WordPress 6.5+, and WooCommerce 8.0+. You'll also need to register as an OpenAI merchant (free) and configure the API credentials.</p>
+                            <p><strong>System Requirements:</strong> PHP 8.1+, WordPress 6.5+, and WooCommerce 8.0+</p>
+                            <p><strong>PHP Extensions Required:</strong> json, hash, curl, mbstring</p>
+                            <p><strong>Setup:</strong> You'll also need to register as an OpenAI merchant (free process) and configure the API credentials. Our beautiful setup wizard guides you through this in just 5 minutes.</p>
                         </div>
                     </div>
                 </div>
@@ -432,7 +455,15 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>Very secure. We use HMAC-SHA256 signature authentication (same as Stripe), timestamp validation with 5-minute tolerance, rate limiting, and idempotency keys. All API requests must be cryptographically signed.</p>
+                            <p>Extremely secure - we implement enterprise-grade security standards:</p>
+                            <ul style="margin: 0.5rem 0 0 1.5rem;">
+                                <li><strong>HMAC-SHA256 authentication</strong> - Same security standard used by Stripe and payment platforms</li>
+                                <li><strong>Timestamp validation</strong> - 5-minute tolerance window prevents replay attacks</li>
+                                <li><strong>Rate limiting protection</strong> - Prevents API abuse</li>
+                                <li><strong>Idempotency key support</strong> - Prevents duplicate orders</li>
+                                <li><strong>Signature verification</strong> - All requests must be cryptographically signed</li>
+                            </ul>
+                            <p style="margin-top: 0.5rem;">Every API request is verified before processing to ensure maximum security for your store.</p>
                         </div>
                     </div>
                 </div>
